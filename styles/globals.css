@@ -126,7 +126,7 @@ body::selection {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 30px;
   display: flex;
   align-items: center;
@@ -138,7 +138,7 @@ body::selection {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 60px;
   line-height: 92.5%;
   /* or 89px */
 
@@ -157,7 +157,6 @@ body::selection {
   height: 200px;
   background: url("https://uploads-ssl.webflow.com/63e2796784a816a089006bb0/63ecf0848a40f4747fb859e1_Wave_off-white.svg");
   background-size: 3840px 200px;
-  
 }
 
 .wave1 {
@@ -165,13 +164,13 @@ body::selection {
 }
 
 @keyframes animateWave1 {
-  0%{
+  0% {
     background-position-x: 1500px;
   }
-  50%{
+  50% {
     background-position-x: 2000px;
   }
-  0%{
+  0% {
     background-position-x: 1500px;
   }
 }
@@ -186,7 +185,6 @@ body::selection {
   height: 200px;
   background: url("https://uploads-ssl.webflow.com/63e2796784a816a089006bb0/63e402fb348704e03da8be20_Wave_white.svg");
   background-size: 3840px 200px;
-  
 }
 
 .wave2 {
@@ -194,13 +192,24 @@ body::selection {
 }
 
 @keyframes animateWave2 {
-  0%{
+  0% {
     background-position-x: -1500px;
   }
-  50%{
+  50% {
     background-position-x: -2000px;
   }
-  0%{
+  0% {
     background-position-x: -1500px;
+  }
+}
+
+/* media quries */
+
+@media (min-width: 640px) {
+  .boldtext {
+    font-size: 96px;
+  }
+  .normaltext {
+    font-size: 20px;
   }
 }

@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="w-full select-none ">
       <div className="header h-[60px] flex items-center justify-center">
-        <div className="container flex flex-row items-center pl-[80px] pr-[40px] justify-between">
+        <div className="container flex flex-row items-center pl-[15px] pr-[15px] md:pl-[80px] md:pr-[40px] justify-between">
           {/* Logo : Talent Empire */}
           <div>
             <Image alt="Logo" src={Logo} />
@@ -24,7 +24,7 @@ const Header = () => {
             {/* options */}
             <div className="hidden md:flex flex-row items-center gap-x-[40px] ">
               {HeaderOptions?.map(({ name, href }, index) => (
-                <div>
+                <div key={index}>
                   <div className="option">{name}</div>
                 </div>
               ))}
