@@ -191,6 +191,18 @@ body::selection {
   animation: animateWave2 25s linear infinite;
 }
 
+@keyframes animateWave2 {
+  0% {
+    background-position-x: -1500px;
+  }
+  50% {
+    background-position-x: -2000px;
+  }
+  0% {
+    background-position-x: -1500px;
+  }
+}
+
 .blue-shadow {
   box-shadow: 0px 10px 100px 10px #3887fc;
 }
@@ -209,9 +221,61 @@ body::selection {
   border-radius: 20px;
 }
 
-/* <=========== MEDIA QUERIES =============> */
+.maxheight {
+  height: calc(max-content);
+}
 
-@keyframes animateWave2 {
+.footer-text-shadow {
+  box-shadow: 0px 0px 100px 120px #3f8cff;
+  background-color: #3f8cff;
+}
+
+.footer-wave1 {
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  filter: invert(57%) sepia(100%) saturate(534%) hue-rotate(186deg);
+  height: 200px;
+  background: url("https://uploads-ssl.webflow.com/63e2796784a816a089006bb0/63ecf0848a40f4747fb859e1_Wave_off-white.svg");
+  background-size: 3840px 200px;
+}
+
+.footer-wave1 {
+  animation: footeranimateWave1 25s linear infinite;
+}
+
+@keyframes footeranimateWave1 {
+  0% {
+    background-position-x: 1500px;
+  }
+  50% {
+    background-position-x: 2000px;
+  }
+  0% {
+    background-position-x: 1500px;
+  }
+}
+
+.footer-wave2 {
+  opacity: 0.4;
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  left: 0;
+  filter: invert(57%) sepia(100%) saturate(534%) hue-rotate(186deg);
+  width: 100%;
+  height: 200px;
+  background: url("https://uploads-ssl.webflow.com/63e2796784a816a089006bb0/63e402fb348704e03da8be20_Wave_white.svg");
+  background-size: 3840px 200px;
+}
+
+.footer-wave2 {
+  animation: footeranimateWave2 25s linear infinite;
+}
+
+@keyframes footeranimateWave2 {
   0% {
     background-position-x: -1500px;
   }
@@ -222,6 +286,8 @@ body::selection {
     background-position-x: -1500px;
   }
 }
+
+/* <=========== MEDIA QUERIES =============> */
 
 /* media quries */
 
