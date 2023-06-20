@@ -2,14 +2,12 @@ import Image from "next/image";
 // Components
 import Header from "../components/Header/Header";
 import Woman from "../components/HomePage/Woman";
+import OurServices from "../components/HomePage/OurServices";
 
 export default function Home() {
   return (
-    <div className="relative w-full">
-      {/* Header Bar */}
-      <div className="absolute z-50 w-full top-6">
-        <Header />
-      </div>
+    // remove padding bottom from here 
+    <div className="relative w-full pb-10">
       <div className="relative z-[0]">
         {/* woman face */}
         <div className="relative h-fit">
@@ -19,6 +17,12 @@ export default function Home() {
             <div className="wave1"></div>
             <div className="wave2"></div>
           </div>
+        </div>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        {/* Our Services */}
+        <div className="container">
+          <OurServices />
         </div>
       </div>
     </div>
