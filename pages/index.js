@@ -3,10 +3,13 @@ import Image from "next/image";
 import Header from "../components/Header/Header";
 import Woman from "../components/HomePage/Woman";
 import OurServices from "../components/HomePage/OurServices";
+import About from "../components/HomePage/About";
+import OurAgency from "../components/HomePage/OurAgency";
+import Stories from "../components/HomePage/Stories";
 
 export default function Home() {
   return (
-    // remove padding bottom from here 
+    // remove padding bottom from here
     <div className="relative w-full pb-10">
       <div className="relative z-[0]">
         {/* woman face */}
@@ -23,6 +26,18 @@ export default function Home() {
         {/* Our Services */}
         <div className="container">
           <OurServices />
+        </div>
+        {/* About us */}
+        <div className="container">
+          <About />
+        </div>
+        {/* Our Success Stories */}
+        <div className="container">
+          <Stories/>
+        </div>
+        {/* Our Agenecy */}
+        <div className="w-full">
+          <OurAgency />
         </div>
       </div>
     </div>

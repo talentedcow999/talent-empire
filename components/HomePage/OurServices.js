@@ -30,13 +30,13 @@ const ServiceArray = [
 
 const OurServices = () => {
   return (
-    <div className="mt-6 px-[15px] md:px-[80px] ">
-      <div className="text-lg font-semibold text-brand">
+    <div className="mt-6 px-[15px] md:px-[80px] text-center sm:text-start">
+      <div className="text-sm sm:text-lg font-semibold text-brand">
         WHAT WE CAN DO FOR YOU
       </div>
-      <div className="text-7xl font-extrabold">Our Services</div>
+      <div className="text-5xl sm:text-7xl font-extrabold">Our Services</div>
       {/* Images Card */}
-      <div className="mt-8 grid grid-flow-rows grid-cols-1 gap-x-5">
+      <div className="mt-8 grid grid-flow-rows grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-5 justify-center">
         {ServiceArray?.map((item, index) => (
           <div key={index}>
             <ServiceCard
@@ -55,11 +55,16 @@ export default OurServices;
 
 const ServiceCard = ({ cardImage, cardTitle, cardDesc }) => {
   return (
-    <div className="rounded-2xl h-[380px] p-3">
+    <div className="rounded-2xl h-[380px] p-3 flex flex-col ">
       <div className="w-full flex items-center justify-center h-[45%] select-none">
-        <Image draggable="false" width={200} alt="service image" src={cardImage} />
+        <Image
+          draggable="false"
+          width={200}
+          alt="service image"
+          src={cardImage}
+        />
       </div>
-      <div className="mt-4 flex flex-col gap-y-2">
+      <div className="mt-4 flex flex-col gap-y-2 items-center">
         <div className="text-brand text-xl font-semibold">{cardTitle}</div>
         <div className="w-[230px] text-sm">{cardDesc}</div>
       </div>

@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div
       className={JoinClasses(
-        OpenHeader ? "absolute z-50 bg-[#202023] top-0" : "absolute z-50 top-6",
+        OpenHeader ? "fixed z-50 bg-[#202023] top-0" : "absolute z-50 top-6",
         "w-full select-none duration-100 ease-linear transition-all"
       )}
     >
