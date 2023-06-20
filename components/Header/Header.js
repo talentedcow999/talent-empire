@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import Logo from "../../assests/icons/Logo.svg";
+import Link from "next/link";
 import Image from "next/image";
 import { TextAlignRightIcon } from "@radix-ui/react-icons";
 import { JoinClasses } from "../../utils/functions";
 
 const HeaderOptions = [
-  { name: "Home", href: "" },
-  { name: "About", href: "" },
-  { name: "Services", href: "" },
-  { name: "FAQ", href: "" },
-  { name: "Contact", href: "" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/" },
+  { name: "FAQ", href: "/" },
+  { name: "Contact", href: "/" },
 ];
 
 const Header = () => {
@@ -31,16 +32,20 @@ const Header = () => {
         <div className="py-[15px] container flex flex-col pl-[15px] pr-[15px] md:pl-[80px] md:pr-[40px]">
           <div className="flex flex-row items-center w-full justify-between">
             {/* Logo : Talent Empire */}
-            <div>
-              <Image alt="Logo" src={Logo} />
-            </div>
+            <Link href={"/"}>
+              <div>
+                <Image alt="Logo" src={Logo} />
+              </div>
+            </Link>
             {/* Buttons and Apply Now Option */}
             <div className="flex items-center gap-x-[40px]">
               {/* options */}
               <div className="hidden md:flex flex-row items-center gap-x-[40px] ">
                 {HeaderOptions?.map(({ name, href }, index) => (
                   <div key={index}>
-                    <div className="option">{name}</div>
+                    <Link href={href}>
+                      <div className="option">{name}</div>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -60,10 +65,21 @@ const Header = () => {
             </div>
           </div>
           {/* Header Options */}
-          <div className={JoinClasses(OpenHeader ? "flex": "hidden","text-white h-full items-center justify-center")}>
+          <div
+            className={JoinClasses(
+              OpenHeader ? "flex" : "hidden",
+              "text-white h-full items-center justify-center"
+            )}
+          >
             <div className="gap-y-10 flex flex-col text-2xl text-center">
               {HeaderOptions?.map((item, index) => (
-                <div key={index} onClick={()=> setOpenHeader(!OpenHeader)} >{item?.name}</div>
+                <div key={index}>
+                  <Link href={item?.href}>
+                    <div onClick={() => setOpenHeader(!OpenHeader)}>
+                      {item?.name}
+                    </div>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>

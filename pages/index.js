@@ -1,7 +1,7 @@
 import Image from "next/image";
 // Components
 import Header from "../components/Header/Header";
-import Woman from "../components/HomePage/Woman";
+import HomeHero from "../components/HomePage/HomeHero";
 import OurServices from "../components/HomePage/OurServices";
 import About from "../components/HomePage/About";
 import OurAgency from "../components/HomePage/OurAgency";
@@ -17,7 +17,7 @@ export default function Home() {
       <div className="relative z-[0]">
         {/* woman face */}
         <div className="relative h-fit">
-          <Woman />
+          <HomeHero />
           {/* Waving animation */}
           <div className="h-[200px] overflow-hidden absolute w-full z-20 -bottom-7">
             <div className="wave1"></div>
