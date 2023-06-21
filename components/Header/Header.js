@@ -8,9 +8,9 @@ import { JoinClasses } from "../../utils/functions";
 const HeaderOptions = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Services", href: "/" },
-  { name: "FAQ", href: "/" },
-  { name: "Contact", href: "/" },
+  { name: "Services", href: "/service" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const Header = () => {

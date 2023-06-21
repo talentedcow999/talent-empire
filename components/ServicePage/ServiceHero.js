@@ -4,7 +4,7 @@ import Image from "next/image";
 import WomanFace from "../../assests/images/womanFace.png";
 import BackgroundLogo from "../../assests/images/backgroundLogo.png";
 
-const AboutHero = () => {
+const ServiceHero = () => {
   return (
     <div className="relative flex justify-center bg-slate-400 h-[750px] z-10 overflow-hidden">
       {/* face image */}
@@ -26,20 +26,13 @@ const AboutHero = () => {
         />
       </div>
       {/* text on image */}
-      <div className="absolute mt-[160px] container">
+      <div className="absolute mt-[200px] container">
         <div className="flex flex-col gap-y-[28px] items-center md:items-start md:pl-[80px]">
           <div className="flex flex-col gap-y-[8px] items-center md:items-start">
-            <p className="normaltext">INDUSTRY LEADING EXPERTS </p>
+            <p className="normaltext">WHAT WE CAN DO FOR YOU</p>
             <div className="flex flex-col items-center md:items-start">
-              <div className="boldtext">Our Team</div>
+              <div className="boldtext">Our Services</div>
             </div>
-          </div>
-          <div className="normaltext px-[20px] sm:px-0 sm:text-start text-center sm:w-[500px]">
-            {`Talent Empire is a globally staffed team of OnlyFans experts based
-            in Europe. We provide professional full-service OnlyFans management
-            and all tools to maximize your success on OnlyFans. We lift your
-            existing career to the next level or entirely kickstart your new
-            OnlyFans career and income.`}
           </div>
         </div>
       </div>
@@ -47,4 +40,4 @@ const AboutHero = () => {
   );
 };
 
-export default AboutHero;
+export default ServiceHero;
