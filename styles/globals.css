@@ -213,6 +213,19 @@ body::selection {
   min-width: 200px;
 }
 
+.textarea-message{
+  height: 100px;
+  padding-top: 4px;
+  max-width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+}
+
+.contact-image{
+  flex: 0 1 600px;
+  height: 100%;
+}
+
 .numbers-card {
   background: #ffffff33;
   background-blend-mode: overlay;
