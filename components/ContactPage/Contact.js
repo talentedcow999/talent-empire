@@ -118,7 +118,7 @@ const Contact = () => {
             <div className="h-10 w-10">
               <Image alt="MailIcon" src={MailIcon} />
             </div>
-            <div className="text-sm">{`services@talentempire.com`}</div>
+            <div className="text-sm">{`talent@talentempire.com`}</div>
           </div>
         </div>
       </div>
