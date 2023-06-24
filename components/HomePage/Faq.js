@@ -97,11 +97,7 @@ const Faq = () => {
             </div>
           </div>
           <div className="p-5">
-            {`We are approachable 24/7 for you. It is totally up to you if you
-            want a daily chat or rather a weekly/monthly check-in. We have the
-            human resources to provide a daily exchange as well as the technical
-            infrastructure to work absolutely efficiently while having a
-            personal exchange to the absolute minimum.`}
+            {`You directly apply via Application form. We carefully review your provided information and reach out to you within the next 24 hours.`}
           </div>
         </div>
         {/* Faq question 3 */}
@@ -131,11 +127,7 @@ const Faq = () => {
             </div>
           </div>
           <div className="p-5">
-            {`We are approachable 24/7 for you. It is totally up to you if you
-            want a daily chat or rather a weekly/monthly check-in. We have the
-            human resources to provide a daily exchange as well as the technical
-            infrastructure to work absolutely efficiently while having a
-            personal exchange to the absolute minimum.`}
+            {`While our focus is to massively grow existing accounts, we also consider new starters. In regards to a successful application, we take several different aspects into account.`}
           </div>
         </div>
       </div>
