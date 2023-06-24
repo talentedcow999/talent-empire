@@ -29,7 +29,7 @@ const Letstalk = () => {
             </div>
             <div className="h-full justify-evenly flex flex-col ml-2">
               <div className="text-lg font-bold">{`Mail Us At:`}</div>
-              <div>{`service@talentempire.com`}</div>
+              <div>{`talent@talentempire.com`}</div>
             </div>
           </div>
         </div>
