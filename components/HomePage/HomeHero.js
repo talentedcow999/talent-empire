@@ -39,7 +39,7 @@ const HomeHero = () => {
             </div>
           </div>
           <div className="normaltext">WORLD’S BEST ONLYFANS AGENCY</div>
-          <Link href={"/contact"}>
+          <Link href={"/#letstalk"}>
             <button className="black_applynowbtn">
               <span>Apply Now!</span>
             </button>

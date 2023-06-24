@@ -33,7 +33,7 @@ const Stories = () => {
           Success Stories
         </div>
         <div className="mt-5 px-[30px] sm:px-0 sm:w-[400px] text-xl">{`The key to a successful life always lies in the connection one creates, invests, and cares for.At Talent Empire, that is exactly what we do.`}</div>
-        <Link href={"/contact"}>
+        <Link href={"/#letstalk"}>
           <div className="mt-10">
             <button className="bg-brand hover:bg-brandhover pl-[50px] pr-[20px] py-[14px] rounded-lg text-white font-light">
               <div className="flex flex-row items-center gap-8">
@@ -48,7 +48,7 @@ const Stories = () => {
       <div className="flex w-full flex-row mt-10 px-[15px] md:px-[10px] lg:px-[80px] gap-x-10 gap-y-20 flex-wrap lg:flex-row lg:justify-between justify-center">
         {/* first box */}
         <div className="stories-box h-[200px] relative flex justify-center">
-          <div className="w-full h-full bg-[#d9d9d9] rounded-[20px] relative z-10 overflow-hidden">
+          <div className="w-full h-full bg-[#d9d9d9] rounded-[20px] relative z-10 overflow-hidden border border-[#3f8cff46]">
             {/* cover image */}
             <Image
               onClick={() => HideOthers("Player1")}
@@ -71,7 +71,7 @@ const Stories = () => {
         </div>
         {/* second box */}
         <div className="stories-box h-[200px] relative flex justify-center">
-          <div className="w-full h-full bg-[#d9d9d9] rounded-[20px] relative z-10 overflow-hidden">
+          <div className="w-full h-full bg-[#d9d9d9] rounded-[20px] relative z-10 overflow-hidden border border-[#3f8cff46]">
             {/* cover image */}
             <Image
               onClick={() => HideOthers("Player2")}
@@ -94,7 +94,7 @@ const Stories = () => {
         </div>
         {/* third box */}
         <div className="stories-box h-[200px] relative flex justify-center">
-          <div className="w-full h-full bg-[#d9d9d9] rounded-[20px] relative z-10 overflow-hidden">
+          <div className="w-full h-full bg-[#d9d9d9] rounded-[20px] relative z-10 overflow-hidden border border-[#3f8cff46]">
             {/* cover image */}
             <Image
               onClick={() => HideOthers("Player3")}

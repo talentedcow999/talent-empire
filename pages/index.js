@@ -14,7 +14,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     // remove padding bottom from here
-    <div className="relative w-full pb-10">
+    <div className="relative w-full pb-10 scroll-smooth">
       <Head>
         <title>Talent Empire • Home</title>
       </Head>

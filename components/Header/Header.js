@@ -50,7 +50,7 @@ const Header = () => {
                 ))}
               </div>
               {/* Apply Now Btn */}
-              <Link href={"/contact"}>
+              <Link href={"/#letstalk"}>
                 <button className="hidden lg:flex white_applynowbtn">
                   <span>Apply Now!</span>
                 </button>

@@ -6,7 +6,7 @@ const CandelyLink = " https://calendly.com/talentempire/30min"
 
 const Letstalk = () => {
   return (
-    <div className="mt-28 px-[15px] md:px-[80px] text-center sm:text-start">
+    <div id="letstalk" className="mt-28 px-[15px] md:px-[80px] text-center sm:text-start">
       {/* 2 divs with 50% width each */}
       <div className="w-full flex flex-col lg:flex-row px-[30px] sm:px-[0px]">
         {/* 1st div */}
