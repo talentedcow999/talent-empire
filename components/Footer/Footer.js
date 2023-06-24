@@ -30,7 +30,7 @@ const Footer = () => {
               <div className="cursor-pointer">Legal Notice</div>
               <div className="cursor-pointer">Privacy Policy</div>
               <div className="flex flex-row items-center gap-x-5 mt-8">
-                <Link href={"https://twitter.com"}>
+                <Link href={"https://twitter.com/talentemp"}>
                   <TwitterLogoIcon
                     className="cursor-pointer"
                     width={25}
