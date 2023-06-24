@@ -3,6 +3,7 @@ import Image from "next/image";
 // Assests
 import WomanFace from "../../assests/images/womanFace.png";
 import BackgroundLogo from "../../assests/images/backgroundLogo.png";
+import Link from "next/link";
 
 const HomeHero = () => {
   return (
@@ -38,11 +39,11 @@ const HomeHero = () => {
             </div>
           </div>
           <div className="normaltext">WORLD’S BEST ONLYFANS AGENCY</div>
-          <div>
+          <Link href={"/contact"}>
             <button className="black_applynowbtn">
               <span>Apply Now!</span>
             </button>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

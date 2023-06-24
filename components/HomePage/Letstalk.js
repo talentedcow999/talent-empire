@@ -2,6 +2,8 @@ import React from "react";
 import Mail from "../../assests/svg/mail.svg";
 import Image from "next/image";
 
+const CandelyLink = " https://calendly.com/talentempire/30min"
+
 const Letstalk = () => {
   return (
     <div className="mt-28 px-[15px] md:px-[80px] text-center sm:text-start">
@@ -36,7 +38,7 @@ const Letstalk = () => {
           <div className="h-full">
             <iframe
               className="w-full h-full nothumb"
-              src="https://calendly.com/neo-agency/neo-agency?embed_domain=www.neoagency.de&embed_type=Inline&hide_event_type_details=1&primary_color=ff88dc"
+              src={`${CandelyLink}?month=2023-06?embed_type=Inline&hide_event_type_details=1`}
             ></iframe>
           </div>
         </div>

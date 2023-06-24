@@ -3,10 +3,14 @@ import ContactHero from "../components/ContactPage/ContactHero";
 import Faq from "../components/HomePage/Faq";
 import Contact from "../components/ContactPage/Contact";
 import { Toaster } from "react-hot-toast";
+import Head from "next/head";
 
 const Page = () => {
   return (
     <div className="relative w-full pb-10">
+      <Head>
+        <title>Talent Empire • Contact Us</title>
+      </Head>
       {/* React Toast Bar */}
       <div>
         <Toaster />

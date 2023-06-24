@@ -9,11 +9,15 @@ import Stories from "../components/HomePage/Stories";
 import Letstalk from "../components/HomePage/Letstalk";
 import OurValues from "../components/HomePage/OurValues";
 import Faq from "../components/HomePage/Faq";
+import Head from "next/head";
 
 export default function Home() {
   return (
     // remove padding bottom from here
     <div className="relative w-full pb-10">
+      <Head>
+        <title>Talent Empire • Home</title>
+      </Head>
       <div className="relative z-[0]">
         {/* woman face */}
         <div className="relative h-fit">

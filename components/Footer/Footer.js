@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Logo from "../../assests/icons/Logo.svg";
 import { TwitterLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -23,20 +24,26 @@ const Footer = () => {
               </div>
             </div>
             <div className="text-white flex flex-col gap-y-3 h-full justify-end items-center mt-2 sm:items-end relative z-10">
-              <div className="cursor-pointer text-lg">About</div>
+              <Link href={"/about"}>
+                <div className="cursor-pointer text-lg">About</div>
+              </Link>
               <div className="cursor-pointer">Legal Notice</div>
               <div className="cursor-pointer">Privacy Policy</div>
               <div className="flex flex-row items-center gap-x-5 mt-8">
-                <TwitterLogoIcon
-                  className="cursor-pointer"
-                  width={25}
-                  height={25}
-                />
-                <InstagramLogoIcon
-                  className="cursor-pointer"
-                  width={25}
-                  height={25}
-                />
+                <Link href={"https://twitter.com"}>
+                  <TwitterLogoIcon
+                    className="cursor-pointer"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
+                <Link href={"https://instagram.com"}>
+                  <InstagramLogoIcon
+                    className="cursor-pointer"
+                    width={25}
+                    height={25}
+                  />
+                </Link>
               </div>
             </div>
           </div>

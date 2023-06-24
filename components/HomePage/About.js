@@ -1,5 +1,7 @@
 import React from "react";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
+import AboutUsGif from "../../assests/coverphoto/About_us.gif";
 
 const About = () => {
   return (
@@ -36,8 +38,17 @@ const About = () => {
         </div>
         {/* 2nd div */}
         <div className="lg:w-[50%] h-[400px] mt-10 lg:mt-0 lg:p-10">
-          <div className="w-full h-full relative flex justify-center">
-            <div className="w-full h-full bg-[#d9d9d9] rounded-[20px] relative z-10"></div>
+          <div className="w-full h-fit relative flex justify-center">
+            <div className="w-full h-fit bg-[#d9d9d9] rounded-[20px] relative z-10 overflow-hidden">
+              {/* https://i.imgur.com/EW9G68q.mp4 <-- Video Link */}
+              <Image
+                alt="about image"
+                src={AboutUsGif}
+                width={1080}
+                height={1080}
+                className="h-full w-full"
+              ></Image>
+            </div>
             <div className="absolute bg-brand w-[90%] h-8 rounded-lg -bottom-3 blue-shadow"></div>
           </div>
         </div>

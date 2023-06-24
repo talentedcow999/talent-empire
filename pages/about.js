@@ -1,10 +1,14 @@
 import React from "react";
 import AboutHero from "../components/AboutPage/AboutHero";
 import Faq from "../components/HomePage/Faq";
+import Head from "next/head";
 
 const Page = () => {
   return (
     <div className="relative w-full pb-10">
+      <Head>
+        <title>Talent Empire • About Us</title>
+      </Head>
       <div className="relative z-[0]">
         {/* woman face */}
         <div className="relative h-fit">

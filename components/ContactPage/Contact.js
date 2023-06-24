@@ -31,11 +31,11 @@ const Contact = () => {
         const response = await fetch("/api/sendDetails", {
           method: "POST",
           body: JSON.stringify(UserObj),
-        });
+        }).then((result) => result.json());
 
-        if (response?.message === "ADDRESS_LENGTH_EXCEEDED") {
-          reject(response?.message_text);
-        } else {
+        if (response?.error == true) {
+          reject("");
+        } else if (response?.error == false) {
           resolve("");
         }
       });

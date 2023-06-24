@@ -5,6 +5,7 @@ import Footer from "../components/Footer/Footer";
 function MyApp({ Component, pageProps }) {
   return (
     <div>
+      <script async src="https://player.vimeo.com/api/player.js"></script>
       <div className="w-full scroll-smooth">
         {/* Header Bar */}
         <div className="w-full">

@@ -50,11 +50,11 @@ const Header = () => {
                 ))}
               </div>
               {/* Apply Now Btn */}
-              <div>
+              <Link href={"/contact"}>
                 <button className="hidden lg:flex white_applynowbtn">
                   <span>Apply Now!</span>
                 </button>
-              </div>
+              </Link>
               {/* Mobile Header Open Header Button */}
               <div
                 onClick={() => setOpenHeader(!OpenHeader)}

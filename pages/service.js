@@ -4,10 +4,14 @@ import Stories from "../components/HomePage/Stories";
 import Faq from "../components/HomePage/Faq";
 import Letstalk from "../components/HomePage/Letstalk";
 import ServiceInfos from "../components/ServicePage/ServiceInfos";
+import Head from "next/head";
 
 const Page = () => {
   return (
     <div className="relative w-full pb-10">
+      <Head>
+        <title>Talent Empire • Services</title>
+      </Head>
       <div className="relative z-[0]">
         {/* woman face */}
         <div className="relative h-fit">
