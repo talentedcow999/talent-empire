@@ -168,7 +168,7 @@ const Stories = () => {
               </div>
               <div className="h-[90%] sm:h-full flex justify-center w-[370px] ">
                 <iframe
-                  src={Video1}
+                  src={Video2}
                   className="h-full w-[720px]"
                   allowFullScreen
                   title="video"
