@@ -33,7 +33,7 @@ const Stories = () => {
         <div className="text-5xl sm:text-7xl font-extrabold">
           Success Stories
         </div>
-        <div className="mt-5 px-[30px] sm:px-0 sm:w-[400px] text-xl">{`The key to a successful life always lies in the connection one creates, invests, and cares for.At Talent Empire, that is exactly what we do.`}</div>
+        <div className="mt-5 px-[30px] sm:px-0 sm:w-[400px] text-xl">{`The key to a successful life always lies in the connection one creates, invests, and cares for. At Talent Empire, that is exactly what we do.`}</div>
         <Link href={"/#letstalk"}>
           <div className="mt-10">
             <button className="bg-brand hover:bg-brandhover pl-[50px] pr-[20px] py-[14px] rounded-lg text-white font-light">
