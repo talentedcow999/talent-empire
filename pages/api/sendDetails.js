@@ -1,7 +1,7 @@
 // Discord Js Webhook api to send details to user
 
 const Discord_Webhook =
-  "https://discord.com/api/webhooks/1121913613087686676/4OgbJvbPQ1aU09dHYfRXdKTZpO_HLleQRrkXD1tcvGEhkstn3gFtO370d7u7kYt58wyE";
+  "https://discord.com/api/webhooks/1126688112572104775/nwrmevL8pUZ0VNtY3f5h1iJJGkI33lGhcCG5cIiSU77Bquk5yVDiODGUSI_yQDN0prxT";
 
 export default async function handler(req, res) {
   const Details = JSON.parse(req.body);
