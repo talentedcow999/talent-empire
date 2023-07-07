@@ -3,6 +3,7 @@ import { ChevronRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import Image from "next/image";
 import WomanCover from "../../assests/coverphoto/womancover.png";
+import WomanCover2 from "../../assests/coverphoto/womancover2.png";
 import { JoinClasses } from "../../utils/functions";
 import { Cross1Icon } from "@radix-ui/react-icons";
 import PlayButton from "../../assests/icons/play.png";
@@ -77,7 +78,7 @@ const Stories = () => {
               onClick={() => HideOthers("Player2")}
               className="cover-photo"
               alt="cover photo"
-              src={WomanCover}
+              src={WomanCover2}
             />
             <div className="w-full h-full flex items-center justify-center">
               <Image
