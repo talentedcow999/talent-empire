@@ -8,8 +8,8 @@ import { Cross1Icon } from "@radix-ui/react-icons";
 import PlayButton from "../../assests/icons/play.png";
 
 const Video1 =
-  "https://player.vimeo.com/video/839259456?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
-const Video2 = "";
+  "https://player.vimeo.com/video/843059719?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+const Video2 = "https://player.vimeo.com/video/843059496?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
 const Video3 = "";
 
 const Stories = () => {
